@@ -88,17 +88,6 @@
           <h1><a href="/">dashboard</a></h1>
         </div>
       </header>
-<<<<<<< HEAD
-=======
-	{% if user.is_authenticated %}
-		<p>Welcome {{ user.username }}!</p>
-		<p><a href="{% url 'logout' %}">Logout</a></p>
-	{% else %}
-		<p>You are not logged in.</p>
-		<a href="{% url 'login' %}">Login</a>
-		<a href="{% url 'signup' %}">Sign Up</a>
-	{% endif %}
->>>>>>> c50dc960ee6ac9d7a5413d21863761a434ff643f
 	{% block content %}
 	{% endblock content %}
     </div>

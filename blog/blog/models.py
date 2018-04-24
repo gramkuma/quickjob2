@@ -7,8 +7,9 @@ class Post(models.Model):
     author = models.ForeignKey(
         'auth.User',
         on_delete=models.CASCADE,
+        blank=True
     )
-    body = models.TextField()
+    body = models.TextField(blank=True)
 
     def get_absolute_url(self):
         return reverse('post_detail', args=[str(self.id)])

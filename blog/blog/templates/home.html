@@ -1,11 +1,85 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a href="{% url 'post_new' %}">+ New Application</a>
-  {% for post in object_list %}
-  <div class="post-entry">
-    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-    <p>{{ post.body }}</p>
-  </div>
-  {% endfor %}
+
+<body>
+ 
+    <div class="container">
+        <h2>Job opportunities sorted by how long it takes to apply!</h2>
+
+        <!-- Begin MailChimp Signup Form -->
+
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+  
+</style>
+<div id="mc_embed_signup">
+<form action="https://github.us17.list-manage.com/subscribe/post?u=8f051e8d8c001faa564e586b8&amp;id=d3d5509710" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+    <label for="mce-EMAIL">Sign up to get notified when new jobs are added!</label>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8f051e8d8c001faa564e586b8_d3d5509710" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End signup-->
+
+        <table id="1-min" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>&lt; 1 Min!</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            <tr><td><a target="_blank" href="https://careers.twitter.com/en/work-for-twitter/2018-university-application-full-time-internship.html">Twitter</a></td></tr><tr><td><a target="_blank" href="https://sendgrid.com/careers/">Sendgrid</a></td></tr><tr><td><a target="_blank" href="https://www.mulesoft.com/careers">Mulesoft</a></td></tr><tr><td><a target="_blank" href="https://www.dropbox.com/jobs">Dropbox</a></td></tr><tr><td><a target="_blank" href="https://gusto.com/about/careers">Gusto</a></td></tr><tr><td><a target="_blank" href="https://www.mongodb.com/careers/">MongoDb</a></td></tr><tr><td><a target="_blank" href="https://www.lyft.com/jobs">Lyft</a></td></tr><tr><td><a target="_blank" href="https://squareup.com/careers/jobs">Square</a></td></tr><tr><td><a target="_blank" href="https://www.getcruise.com/careers">Cruise</a></td></tr><tr><td><a target="_blank" href="https://www.yelp.com/careers/job-openings">Yelp</a></td></tr><tr><td><a target="_blank" href="https://www.quora.com/careers">Quora</a></td></tr><tr><td><a target="_blank" href="https://www.thumbtack.com/jobs/">Thumbtack</a></td></tr><tr><td><a target="_blank" href="https://www.thetradedesk.com/join-us/open-positions">The Trade Desk</a></td></tr><tr><td><a target="_blank" href="https://asana.com/jobs">Asana</a></td></tr><tr><td><a target="_blank" href="https://slack.com/careers">Slack</a></td></tr><tr><td><a target="_blank" href="https://www.twitch.tv/p/jobs/">Twitch</a></td></tr><tr><td><a target="_blank" href="https://www.a9.com/work-with-us/">Amazon (A9)</a></td></tr><tr><td><a target="_blank" href="https://www.acorns.com/careers/">Acorns</a></td></tr><tr><td><a target="_blank" href="https://addepar.com/careers/">Addepar</a></td></tr><tr><td><a target="_blank" href="https://www.airbnb.com/careers">AirBnB</a></td></tr><tr><td><a target="_blank" href="https://bitly.com/pages/careers">Bitly</a></td></tr><tr><td><a target="_blank" href="https://www.box.com/careers">Box</a></td></tr><tr><td><a target="_blank" href="https://www.buzzfeed.com/about/jobs">Buzzfeed</a></td></tr><tr><td><a target="_blank" href="https://www.codecademy.com/about/jobs">Codecademy</a></td></tr><tr><td><a target="_blank" href="https://jobs.lever.co/codefights">Codefights</a></td></tr><tr><td><a target="_blank" href="https://www.coinbase.com/careers">Coinbase</a></td></tr><tr><td><a target="_blank" href="https://www.compass.com/careers/">Compass</a></td></tr><tr><td><a target="_blank" href="https://about.coursera.org/careers">Coursera</a></td></tr><tr><td><a target="_blank" href="https://www.datadoghq.com/careers/">DataDog</a></td></tr><tr><td><a target="_blank" href="https://www.digitalocean.com/company/careers/">Digital Ocean</a></td></tr><tr><td><a target="_blank" href="https://disqus.com/company/#jobs">Disqus</a></td></tr><tr><td><a target="_blank" href="https://www.docker.com/careers">Docker</a></td></tr><tr><td><a target="_blank" href="https://www.docusign.com/company/careers">DocuSign</a></td></tr><tr><td><a target="_blank" href="https://www.doordash.com/careers/">DoorDash</a></td></tr><tr><td><a target="_blank" href="https://www.duolingo.com/jobs">Duolingo</a></td></tr><tr><td><a target="_blank" href="https://www.edx.org/careers">edX</a></td></tr><tr><td><a target="_blank" href="https://www.eharmony.com/about/careers/">eHarmony</a></td></tr><tr><td><a target="_blank" href="https://www.elastic.co/about/careers">Elastic</a></td></tr><tr><td><a target="_blank" href="https://www.etsy.com/careers/#engineering">Etsy</a></td></tr><tr><td><a target="_blank" href="https://www.flexport.com/careers">Flexport</a></td></tr><tr><td><a target="_blank" href="https://about.flipboard.com/careers/">Flipboard</a></td></tr><tr><td><a target="_blank" href="http://www.greenhouse.io/careers">Greenhouse</a></td></tr><tr><td><a target="_blank" href="https://www.hackerrank.com/careers">HackerRank</a></td></tr><tr><td><a target="_blank" href="https://www.hubspot.com/jobs">HubSpot</a></td></tr><tr><td><a target="_blank" href="https://ifttt.com/jobs">IFTTT</a></td></tr><tr><td><a target="_blank" href="https://imgurinc.com/careers">Imgur</a></td></tr><tr><td><a target="_blank" href="https://www.instructure.com/careers/">Instructure</a></td></tr><tr><td><a target="_blank" href="https://www.kayak.com/careers">Kayak</a></td></tr></tbody>
+        </table>
+
+
+        <table id="5-min" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>&lt; 5 Min!</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            <tr><td><a target="_blank" href="https://about.reddit.com/careers/">Reddit</a></td></tr><tr><td><a target="_blank" href="http://www.akunacapital.com/careers">Akuna Capital</a></td></tr><tr><td><a target="_blank" href="https://www.sequoiacap.com/campus">Sequoia Digital Campus</a></td></tr><tr><td><a target="_blank" href="https://careers.google.com/">Google</a></td></tr><tr><td><a target="_blank" href="https://www.amazon.jobs/">Amazon</a></td></tr><tr><td><a target="_blank" href="https://www.palantir.com/careers/">Palantir</a></td></tr><tr><td><a target="_blank" href="https://www.facebook.com/careers/">Facebook</a></td></tr><tr><td><a target="_blank" href="https://www.bloomberg.com/careers/">Bloomberg</a></td></tr><tr><td><a target="_blank" href="https://www.paypal.com/us/webapps/mpp/jobs">Paypal</a></td></tr><tr><td><a target="_blank" href="https://www.janestreet.com/join-jane-street/apply/">Jane Street</a></td></tr><tr><td><a target="_blank" href="https://angel.co/angellist/jobs">AngelList</a></td></tr><tr><td><a target="_blank" href="https://blendlabs.com/careers/">Blend</a></td></tr><tr><td><a target="_blank" href="https://www.change.org/careers">Change.org</a></td></tr><tr><td><a target="_blank" href="https://careers.intuit.com/job-search">Intuit</a></td></tr><tr><td><a target="_blank" href="https://www.hulu.com/jobs">Hulu</a></td></tr></tbody>
+        </table>
+
+        <table id="10-min" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>&lt; 10 Min!</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            <tr><td><a target="_blank" href="https://careers.microsoft.com/">Microsoft</a></td></tr><tr><td><a target="_blank" href="https://www.ca.com/us/company/careers.html">CA Technologies</a></td></tr><tr><td><a target="_blank" href="https://www.salesforce.com/company/careers/">Salesforce</a></td></tr><tr><td><a target="_blank" href="https://www.workday.com/en-us/company/careers.html">Workday</a></td></tr><tr><td><a target="_blank" href="http://www.belvederetrading.com/careers/">Belvedere</a></td></tr><tr><td><a target="_blank" href="https://www.uber.com/careers/">Uber</a></td></tr><tr><td><a target="_blank" href="https://github.com/about/careers">Github</a></td></tr><tr><td><a target="_blank" href="https://careers.blackrock.com/">Blackrock</a></td></tr><tr><td><a target="_blank" href="https://www.imc.com/eu/careers/">IMC</a></td></tr><tr><td><a target="_blank" href="https://www.optiver.com/eu/en/job-opportunities">Optiver</a></td></tr><tr><td><a target="_blank" href="http://careers.exxonmobil.com/">Exxon Mobil</a></td></tr><tr><td><a target="_blank" href="https://www.betterment.com/careers/">Betterment</a></td></tr></tbody>
+        </table>
+
+        <table id="11-min" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>&gt; 10 Min!</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            <tr><td><a target="_blank" href="http://careers.dish.com/">Dish</a></td></tr><tr><td><a target="_blank" href="https://www.citadel.com/careers">Citadel</a></td></tr><tr><td><a target="_blank" href="https://usa.visa.com/careers.html">Visa</a></td></tr><tr><td><a target="_blank" href="http://www.trimble.com/Careers/">Trimble</a></td></tr><tr><td><a target="_blank" href="https://www.ea.com/careers">EA</a></td></tr><tr><td><a target="_blank" href="https://www.osisoft.com/about-osisoft/careers/">OSISoft</a></td></tr><tr><td><a target="_blank" href="http://www.northropgrumman.com/Careers/">Northrop Grumman</a></td></tr><tr><td><a target="_blank" href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html">Deloitte</a></td></tr><tr><td><a target="_blank" href="https://automattic.com/work-with-us/">Automaticc</a></td></tr><tr><td><a target="_blank" href="https://bitnami.com/careers">Bitnami</a></td></tr><tr><td><a target="_blank" href="https://jobs.groupon.com/categories/engineering">Groupon</a></td></tr><tr><td><a target="_blank" href="https://careers.grubhub.com/">Grubhub</a></td></tr><tr><td><a target="_blank" href="https://www.intercom.com/careers">Intercom</a></td></tr></tbody>
+        </table>
+    </div>
+    <!-- /.container -->
+
+    <div>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
 {% endblock content %}

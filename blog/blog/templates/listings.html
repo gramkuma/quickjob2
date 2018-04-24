@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 
 {% block content %}
-<script src="{%static 'main.js' %"}></script>
+<a href="{% url 'post_new' %}">+ New Application</a>
+  {% for post in object_list %}
+  <div class="post-entry">
+    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+    <p>{{ post.body }}</p>
+  </div>
+  {% endfor %}
 {% endblock content %}

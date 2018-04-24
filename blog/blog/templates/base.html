@@ -11,9 +11,6 @@
         <div class="nav-left">
           <h1><a href="/">dashboard</a></h1>
         </div>
-        <div class="nav-right">
-          <a href="{% url 'post_new' %}">+ New Application</a>
-        </div>
       </header>
 	{% if user.is_authenticated %}
 		<p>Welcome {{ user.username }}!</p>
